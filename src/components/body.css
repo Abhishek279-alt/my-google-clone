@@ -1,0 +1,40 @@
+.body-container {
+  margin-top: 5.3rem;
+}
+
+#logo-dark {
+  display: none;
+}
+
+.search-bar {
+  border: 1px solid rgb(201, 201, 201);
+  height: 6vh;
+  width: 38vw;
+  border-radius: 22px;
+}
+#search-box {
+  width: 30vw;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search-btn {
+  background-color: #f8f9fa;
+  border: none;
+  width: 8.95vw;
+  font-size: 0.91rem;
+  border-radius: 4px;
+}
+
+.search-lang {
+  text-decoration: none;
+  color: rgb(21, 21, 163);
+  font-size: small;
+  margin: 0px 5px;
+}
+
+.search-lang:hover {
+  text-decoration: underline;
+  color: rgb(21, 21, 163);
+}

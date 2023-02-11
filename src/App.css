@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.nav-item {
+  font-size: 0.84rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item a {
+  color: rgb(0, 0, 0);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item a:hover {
+  color: rgb(0, 0, 0);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#app-icon-light {
+  padding: 0.65rem 0.1rem;
+  width: 35px;
+  height: 35px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+#app-icon-dark {
+  padding: 0.65rem 0.1rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#app-icon-light:hover {
+  background-color: #ededede5;
+  transition: display;
+}
+
+#app-icon-dark:hover {
+  background-color: #4242428e;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+.sign-btn {
+  background-color: #1a73e8;
+  height: 2.2rem;
+  padding: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.sign-btn:hover {
+  background-color: #1769d4;
+  box-shadow: 0px 1px 5px 0px #00000043;
+}
+
+.sign-btn a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.sign-btn a:hover {
+  color: #fff;
+}
+
+.app-panel {
+  display: flex;
+  border: 1px solid rgb(48, 48, 48);
+  width: 300px;
+  height: 150px;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 7px;
+  left: 80vw;
+  top: 8vh;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #70757a;
+  font-size: 0.93rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.light-mode,
+.dark-mode {
+  cursor: pointer;
+  background-color: transparent;
+}
+.light-mode:hover,
+.dark-mode:hover {
+  background-color: #778ac142;
+}
+
+#theme-toggler {
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all 0.1s ease;
+}
+
+#theme-toggler:hover {
+  text-shadow: 0px 0px 30px black;
+  font-size: 1.5rem;
 }
